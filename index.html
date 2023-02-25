@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <h4>Password Generator</h4>
+      <div class="properties textbox">
+        <input type="text" id="pwd" value="test" />
+        <div id="cpy" class="cpy-container">
+          <img src="./src/img/copy-16.png" alt="copy to clipboard" />
+        </div>
+      </div>
+      <form action="#" class="properties">
+        <div class="length">
+          <label>Character Length</label>
+          <h4 id="count">10</h4>
+        </div>
+        <div class="slider">
+          <input type="range" min="1" max="20" value="10" id="slider" />
+        </div>
+        <div class="checkbox-wrapper-42">
+          <input id="uppercase" type="checkbox" />
+          <label class="cbx" for="uppercase"></label>
+          <label class="lbl" for="uppercase">Include Uppercase letters</label>
+        </div>
+        <div class="checkbox-wrapper-42">
+          <input id="lowercase" type="checkbox" />
+          <label class="cbx" for="lowercase"></label>
+          <label class="lbl" for="lowercase">Include Lowercase letters</label>
+        </div>
+        <div class="checkbox-wrapper-42">
+          <input id="numbers" type="checkbox" />
+          <label class="cbx" for="numbers"></label>
+          <label class="lbl" for="numbers">Include numbers</label>
+        </div>
+        <div class="checkbox-wrapper-42">
+          <input id="special" type="checkbox" />
+          <label class="cbx" for="special"></label>
+          <label class="lbl" for="special">Include special character</label>
+        </div>
+        <div class="field-btn">
+          <button id="generate-btn" type="button">generate</button>
+        </div>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Mock application for password generation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/parcel/lib/cli index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "A2hu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "parcel": "^2.8.3"
+  }
+}

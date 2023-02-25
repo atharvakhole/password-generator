@@ -1,0 +1,264 @@
+html {
+  background-color: #0d0f14;
+  font-family: monospace;
+  color: white;
+  height: 100vh;
+}
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  color: gray;
+  text-align: center;
+}
+h6 {
+  margin: 0;
+  color: white;
+}
+.properties {
+  width: 16rem;
+  background-color: #212329;
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+input[type="checkbox"]:checked {
+  font-size: 16px;
+  background-color: #212329;
+}
+input[type="text"] {
+  all: unset;
+  font-size: 16px;
+  color: white;
+  background-color: #212329;
+}
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: aquamarine;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #212329;
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #212329;
+  border: 2px solid aquamarine;
+  cursor: pointer;
+}
+.slider {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+label {
+  color: white;
+  font-size: 10px;
+}
+.field {
+  display: flex;
+  align-items: center;
+}
+.field-btn {
+  margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  font-family: monospace;
+  font-size: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem 0rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid aquamarine;
+}
+
+.checkbox-wrapper-42 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-42 label {
+  display: inline-block;
+  margin: 0.25rem 0rem;
+}
+
+.checkbox-wrapper-42 .cbx {
+  position: relative;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid aquamarine;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.checkbox-wrapper-42 .cbx:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 3px;
+  height: 6px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #212329;
+  border-bottom: 2px solid #212329;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+.checkbox-wrapper-42 .lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox-wrapper-42 input[type="checkbox"]:checked ~ .cbx {
+  border-color: transparent;
+  background: aquamarine;
+  animation: jelly-42 0.6s ease;
+}
+.checkbox-wrapper-42 input[type="checkbox"]:checked ~ .cbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+.checkbox-wrapper-42 .cntr {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+@-moz-keyframes jelly-42 {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes jelly-42 {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes jelly-42 {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@keyframes jelly-42 {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+.textbox {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.length {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  align-items: center;
+}
+.length h4 {
+  all: unset;
+  color: aquamarine;
+}
+
+.cpy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
